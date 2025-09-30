@@ -19,13 +19,13 @@ const playMachine = () => {
 }
 
 const playTheGame = (human, machine) => {
-    console.log('Humano: ' + human + "Maquina: " + machine)
+    // console.log('Humano: ' + human + "Maquina: " + machine)
 
     if (human === machine) {
         result.innerHTML = 'Deu Empate!'
     } else if (
         (human === 'paper' && machine === 'rock') ||
-        (human === 'rock' && machine === 'rscissors') ||
+        (human === 'rock' && machine === 'scissors') ||
         (human === 'scissors' && machine === 'paper')
     ) {
         humanScoreNumber++
